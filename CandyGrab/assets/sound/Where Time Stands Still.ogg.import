@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Where Time Stands Still.ogg-67d60cb25826b46302e403adb512c088.oggstr"
+
+[deps]
+
+source_file="res://assets/sound/Where Time Stands Still.ogg"
+dest_files=[ "res://.import/Where Time Stands Still.ogg-67d60cb25826b46302e403adb512c088.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
