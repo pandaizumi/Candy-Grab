@@ -1,5 +1,7 @@
 extends Area2D
 
+#signal collect
+
 export var speed = 150
 var screen_size
 
@@ -34,3 +36,8 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x, 0 + 6, screen_size.x - 8)
 	position.y = clamp(position.y, 0 + 7, screen_size.y - 16)
+
+
+func _on_Player_area_entered(area):
+	area.collect()
+	#emit_signal("collect")
