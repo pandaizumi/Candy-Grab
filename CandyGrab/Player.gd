@@ -1,6 +1,6 @@
 extends Area2D
 
-#signal collect
+signal collect
 
 export var speed = 150
 var screen_size
@@ -40,4 +40,4 @@ func _process(delta):
 
 func _on_Player_area_entered(area):
 	area.collect()
-	#emit_signal("collect")
+	emit_signal("collect")

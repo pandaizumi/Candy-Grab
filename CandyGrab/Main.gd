@@ -9,9 +9,10 @@ func _ready():
 	score = 0
 	$Player.start($StartPos.position)
 	spawn_candy()
+	$Music.play()
 
 func spawn_candy():
-	var candy  = Candy.instance()
+	var candy = Candy.instance()
 	$Candies.add_child(candy)
 	candy.spawn()
 
@@ -23,3 +24,5 @@ func _process(delta):
 
 func collect_candy():
 	score += 1
+	$CollectSound.play()
+	$HUD.update_score(score)
